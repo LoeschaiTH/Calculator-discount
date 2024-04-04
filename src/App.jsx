@@ -19,6 +19,13 @@ function App() {
     height: "350px"
   };
 
+  const container = {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(4, 1fr)'
+  };
+
+ 
+
   const [isCouponApplied, setIsCouponApplied] = useState(false);
   const [isCouponApplied2, setIsCouponApplied2] = useState(false);
   const applyCoupon = () => {
@@ -150,17 +157,18 @@ function App() {
               <h1 className=" pt-16">CART  </h1>
               <img className=" w-16 h-16 mt-16" src="/PropImg/cart-icon-28348.png" alt="" />
             </Space> 
-          <ul>
+          <ul className="pt-5">
             {cart.map((item) => (
               <li key={item.id}>
-                <div className=" pt-8" >
-                  <Space>
-                    <Space>
-                      <div className=" pr-8">{item.name} - {item.price} THB { " x "}{item.quantity}{"  "}</div>
-                    </Space>
+               <div className="pt-8" style={{ paddingLeft: "36rem" }}>
+                  <Space style={container}>
+                      <div className="">{item.name} - {item.price} THB { " x "}{item.quantity}{"  "}</div>
+                    <Space size={10}  className="">
                       <button className=" w-4 h-10 flex justify-center" onClick={() => handleIncreaseQuantity(item.id)}>+</button>
                       <button className=" w-4 h-10 flex justify-center" onClick={() => handleDecreaseQuantity(item.id)}>-</button>
                       <button className=" w-20 h-10 flex justify-center" onClick={() => handleRemoveFromCart(item.id)}>Remove</button>
+                    </Space>
+                      
                   </Space>
                 </div>
                 

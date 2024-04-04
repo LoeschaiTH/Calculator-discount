@@ -21,11 +21,11 @@ export const getTotalPriceAfterDiscount = (getTotalPrice, calculateCategoryDisco
 
     const maxPointDiscount = totalPrice * 0.2;
     if (inputPointstotal > 0) {
-        const availablePoints = Math.min(maxPointDiscount, inputPointstotal);
+        const availablePoints = (Math.min(maxPointDiscount, inputPointstotal)).toFixed(2);
         totalPrice -= availablePoints;
         discounts.availablePoints = availablePoints;
     }
-    discounts.maxPointDiscount = maxPointDiscount;
+    discounts.maxPointDiscount = (maxPointDiscount).toFixed(2);
 
     const Seasonal = Math.floor(totalPrice / 300) * 40;
     console.log("Seasonal", Seasonal);

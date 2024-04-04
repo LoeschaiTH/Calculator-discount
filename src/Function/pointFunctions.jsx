@@ -22,9 +22,10 @@ export const plusHandle = (setPoint, Point) => {
       setPoint({
         NumOfoint: pointLast
       });
+      message.success("You are used point cash success.")
       setinputPointstotal(newInputPointstotal);
     } else {
-      message.error('You cannot input more points than you have.');
+      message.error('You cannot input number incorrect.');
     }
   };
   
