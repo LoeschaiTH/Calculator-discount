@@ -1,5 +1,5 @@
 # React + Vite
-React + Antd + Tailwind CSS + JSON
+React + Antd + Tailwind CSS + JSON data
 
 
 
