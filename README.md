@@ -1,6 +1,17 @@
 # React + Vite
 React + Antd + Tailwind CSS + JSON data
 
+React ใช้จัดการ Logic State techical ต่างๆ โดยผ่าน javascript
+Antd ใช้เป็น component จัดการโครงงสร้างต่างๆ
+Tailwind CSS ใช้เก็บรายละเอียด ของ CSS 
+JSON ใช้เก็บ data เพื่อนำมาใช้แบบ object 
+
+Folder img และ PropImg ใช้เก็บรูปภาพ จะเก็บ ใน publie
+
+Folder Data เก็บข้อมูล JSON file
+
+Folder Function เก็บการทำงาน Function ย่อยๆ
+
 The order of applying campaigns is Coupon > On Top > Seasonal. โดยมีรายละเอียดดังนี้
 
 Fixed amount : โดยมีการให้ส่วนลด : -50 บาท
@@ -22,6 +33,8 @@ Percentage discount by item category > Fixed amount > Percentage discount > Disc
 ดังนั้น เลยคิดก่อน Coupon เพราะ จะหักส่วนลด -50 หรือ 10% ไม่ได้ เนื่องจากลดจากจำนวนรวม Percentage discount by item category คิดตามตัวสินค้าไป
 
 ผิดพลาดประการใด ขออภัย ณ ที่นี้
+
+หมายเหตุ Cart อยู่ข้างล่าง ต้องเลื่อนลงไปดูครับ
 
 
 Currently, two official plugins are available:
