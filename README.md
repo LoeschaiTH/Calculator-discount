@@ -1,5 +1,6 @@
 # React + Vite
 React + Antd + Tailwind CSS + JSON data
+The order of applying campaigns is Coupon > On Top > Seasonal.
 
 
 
